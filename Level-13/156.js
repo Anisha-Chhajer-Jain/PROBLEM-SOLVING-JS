@@ -1,4 +1,3 @@
-
 // Q156. Repeat Each Character Twice
 
 function repeatTwice(str) {
