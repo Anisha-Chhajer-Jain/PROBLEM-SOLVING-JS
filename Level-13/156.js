@@ -3,6 +3,9 @@
 
 function repeatTwice(str) {
     let res = "";
-    for (let ch of str) res += ch + ch;
-    return res;
+    for (let ch of str){
+        res += ch + ch;
+    }
+    console.log(res);
 }
+repeatTwice("Hello");
