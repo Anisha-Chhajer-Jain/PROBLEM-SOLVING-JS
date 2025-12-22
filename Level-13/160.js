@@ -34,3 +34,23 @@ function pangram(str) {
     console.log(ascii >= 123 ? true : false);
 }
 pangram("The quick brown fox jumps over a lazy dog")
+
+
+
+
+
+
+function pangram(str){
+let checkStr="qwertyuiopasdfghjklzxcvbnm";
+str=str.toLowerCase();
+for(let i=0;i<checkStr.length;i++){
+if(!(str.includes(checkStr[i]))){
+console.log(false);
+return;
+}
+}
+console.log(true);
+}
+pangram("The quick brown fox jumps over a lazy dog")
+
+
