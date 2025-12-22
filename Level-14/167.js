@@ -6,6 +6,6 @@ function countGreater(arr, k) {
         if (arr[i] > k)
             count++;
     }
-
-    return count;
+    console.log(count);
 }
+countGreater([1, 5, 7, 2]);

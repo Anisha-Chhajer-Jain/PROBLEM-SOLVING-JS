@@ -9,3 +9,19 @@ function minIndex(arr) {
 
     return minIdx;
 }
+
+//---------------------------------------------------------------------------------------------------
+
+
+function maximumIndex(arr) {
+    let max = - Infinity;
+    let maxIndex = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < max) {
+            max = arr[i];
+            maxIndex = i;
+        }
+    }
+    console.log(maxIndex);
+}
+maximumIndex([1, 2, 3, 10, 11, 123, 12])
