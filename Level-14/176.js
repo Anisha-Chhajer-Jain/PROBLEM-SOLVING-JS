@@ -6,5 +6,6 @@ function oddIndexElements(arr) {
         res.push(arr[i]);
     }
 
-    return res;
+    console.log(res);
 }
+oddIndexElements([1,2,3,5,7,8]);

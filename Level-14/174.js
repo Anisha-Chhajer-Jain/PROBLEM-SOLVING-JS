@@ -8,5 +8,6 @@ function maxDifference(arr) {
         if (arr[i] > max) max = arr[i];
     }
 
-    return max - min;
+    console.log(max - min);
 }
+maxDifference([10,20])
