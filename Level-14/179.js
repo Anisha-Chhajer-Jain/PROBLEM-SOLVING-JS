@@ -25,6 +25,36 @@ function removeEmptyStrings(arr) {
 
 removeEmptyStrings(["anisha", "", "dancee"]);
 
+//------------------------------- BY SIR ------------------------------------
+
+function removeEmptyStrings(arr) {
+    for (let i = 0;i<arr.length; i++) {
+        if (arr[i] == "") {
+            arr.splice(i, 1);
+            i=i-1
+        }
+    }
+    console.log(arr);
+}
+
+removeEmptyStrings(["anisha", "", "dancee"]);
+
+//--------------------- IN CLASS-BY SIR(KHUSH) -------------------------
+
+function removeEmptyStrings(arr) {
+    for (let i = 0;i<arr.length;) {
+        if (arr[i] == "") {
+            arr.splice(i, 1);
+        }
+        else{
+            i++;
+        }
+    }
+    console.log(arr);
+}
+
+removeEmptyStrings(["anisha", "", "dancee"]);
+
 //------------------------------- BY FILTER -------------------------------
 
 function removeEmptyStrings(arr) {
