@@ -8,5 +8,6 @@ function sumEven(arr) {
             sum += arr[i];
     }
 
-    return sum;
+    console.log(sum);
 }
+sumEven([5,4,3,2,6,7,7,8])
