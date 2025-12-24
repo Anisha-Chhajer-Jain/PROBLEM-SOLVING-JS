@@ -10,7 +10,7 @@ function sumEven(arr) {
 
     console.log(sum);
 }
-sumEven([5,4,3,2,6,7,7,8])
+sumEven([5, 4, 3, 2, 6, 7, 7, 8])
 
 //-------------------- BY REDUCE ---------------------
 function sumEven(arr) {
@@ -24,4 +24,19 @@ function sumEven(arr) {
     console.log(sum);
 }
 
-sumEven([5,4,3,2,6,7,7,8]);
+sumEven([5, 4, 3, 2, 6, 7, 7, 8]);
+
+//--------------------------- BY SIR ------------------------------
+
+function sumEven(arr) {
+    let res = arr.reduce((sum, num) => {
+        if (num % 2 == 0) {
+            return sum + num
+        }
+        else{
+            return sum;
+        }
+}, 0)
+    console.log(res)
+}
+sumEven([1, 2, 3, 4, 5]);
