@@ -7,7 +7,6 @@ function countLongStrings(arr) {
         if (arr[i].length > 3)
             count++;
     }
-
-    return count;
+    console.log(count);
 }
-
+countLongStrings(["humpty","dumty","anisha","hey"])

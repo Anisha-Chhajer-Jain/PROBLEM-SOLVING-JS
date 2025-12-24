@@ -5,6 +5,5 @@ function firstCharacters(arr) {
     for (let i = 0; i < arr.length; i++) {
         res.push(arr[i][0]);
     }
-
-    return res;
+    console.log(res);
 }
