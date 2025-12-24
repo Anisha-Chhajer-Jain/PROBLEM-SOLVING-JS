@@ -11,3 +11,17 @@ function sumEven(arr) {
     console.log(sum);
 }
 sumEven([5,4,3,2,6,7,7,8])
+
+//-------------------- BY REDUCE ---------------------
+function sumEven(arr) {
+    let sum = arr.reduce((acc, curr) => {
+        if (curr % 2 === 0) {
+            acc += curr;
+        }
+        return acc;
+    }, 0);
+
+    console.log(sum);
+}
+
+sumEven([5,4,3,2,6,7,7,8]);
