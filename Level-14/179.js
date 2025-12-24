@@ -8,6 +8,7 @@ function removeEmptyStrings(arr) {
             res.push(arr[i]);
     }
 
-    return res;
+console.log(res);
 }
+removeEmptyStrings(["anisha","","dancee"])
 

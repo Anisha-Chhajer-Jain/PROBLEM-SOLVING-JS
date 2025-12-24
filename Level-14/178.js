@@ -7,3 +7,4 @@ function firstCharacters(arr) {
     }
     console.log(res);
 }
+firstCharacters(["Ice","lemon","yoyooo"])
