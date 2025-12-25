@@ -1,0 +1,152 @@
+// Q31. Length of String
+// Method 1: Using .length
+function stringLength(str) {
+  console.log(str.length);
+}
+
+// Method 2: Using loop
+function stringLength(str) {
+  let count = 0;
+  for (let ch of str) count++;
+  console.log(count);
+}
+
+// Q32. Print Each Character on New Line
+// Method 1: Using loop
+function printChars(str) {
+  for (let ch of str) {
+    console.log(ch);
+  }
+}
+
+// Method 2: Using split
+function printChars(str) {
+  str.split("").forEach(ch => console.log(ch));
+}
+
+// Q33. Count Vowels (case-insensitive)
+// Method 1: Using loop
+function countVowels(str) {
+  let vowels = "aeiou";
+  let count = 0;
+
+  for (let ch of str.toLowerCase()) {
+    if (vowels.includes(ch)) count++;
+  }
+  console.log(count);
+}
+
+// Method 2: Using regex
+function countVowels(str) {
+  let match = str.match(/[aeiou]/gi);
+  console.log(match ? match.length : 0);
+}
+
+// Q34. Count Consonants
+// Method 1: Using loop
+function countConsonants(str) {
+  let vowels = "aeiou";
+  let count = 0;
+
+  for (let ch of str.toLowerCase()) {
+    if (ch >= 'a' && ch <= 'z' && !vowels.includes(ch)) {
+      count++;
+    }
+  }
+  console.log(count);
+}
+
+// Method 2: Using regex
+function countConsonants(str) {
+  let match = str.match(/[bcdfghjklmnpqrstvwxyz]/gi);
+  console.log(match ? match.length : 0);
+}
+
+// Q35. To Uppercase
+// Method 1: Built-in
+function toUpper(str) {
+  console.log(str.toUpperCase());
+}
+
+// Method 2: Manual (ASCII)
+function toUpper(str) {
+  let res = "";
+  for (let ch of str) {
+    let code = ch.charCodeAt(0);
+    if (code >= 97 && code <= 122)
+      res += String.fromCharCode(code - 32);
+    else
+      res += ch;
+  }
+  console.log(res);
+}
+
+// Q36. To Lowercase
+// Method 1: Built-in
+function toLower(str) {
+  console.log(str.toLowerCase());
+}
+
+// Method 2: Manual
+function toLower(str) {
+  let res = "";
+  for (let ch of str) {
+    let code = ch.charCodeAt(0);
+    if (code >= 65 && code <= 90)
+      res += String.fromCharCode(code + 32);
+    else
+      res += ch;
+  }
+  console.log(res);
+}
+
+// Q37. Reverse a String
+// Method 1: Loop
+function reverseString(str) {
+  let rev = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    rev += str[i];
+  }
+  console.log(rev);
+}
+
+// Method 2: Built-in
+function reverseString(str) {
+  console.log(str.split("").reverse().join(""));
+}
+
+// Q38. Palindrome String
+// Method 1: Reverse & compare
+function isPalindrome(str) {
+  let rev = str.split("").reverse().join("");
+  console.log(str === rev);
+}
+
+// Method 2: Two pointers
+function isPalindrome(str) {
+  let i = 0, j = str.length - 1;
+  while (i < j) {
+    if (str[i] !== str[j]) {
+      console.log(false);
+      return;
+    }
+    i++; j--;
+  }
+  console.log(true);
+}
+
+// Q39. Count Occurrences of 'a'
+// Method 1: Loop
+function countA(str) {
+  let count = 0;
+  for (let ch of str.toLowerCase()) {
+    if (ch === 'a') count++;
+  }
+  console.log(count);
+}
+
+// Method 2: Regex
+function countA(str) {
+  let match = str.match(/a/gi);
+  console.log(match ? match.length : 0);
+}
