@@ -1,4 +1,19 @@
 
+// Q47. Count Lowercase Letters
+function countLowercase(str) {
+  let count = 0;
+  for (let ch of str) {
+    if (ch >= 'a' && ch <= 'z') count++;
+  }
+  return count;
+}
+
+console.log(countLowercase("HeLLo"));      // 2
+console.log(countLowercase("JAVASCRIPT")); // 0
+console.log(countLowercase("Js 101"));     // 1
+
+//------------------------------------------------------------------------
+
 // let str = "AnIsHaaa";
 // let lowerCount = 0;
 

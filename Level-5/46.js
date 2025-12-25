@@ -1,4 +1,19 @@
 
+// Q46. Count Uppercase Letters
+function countUppercase(str) {
+  let count = 0;
+  for (let ch of str) {
+    if (ch >= 'A' && ch <= 'Z') count++;
+  }
+  return count;
+}
+
+console.log(countUppercase("HeLLo"));     // 3
+console.log(countUppercase("javascript"));// 0
+console.log(countUppercase("JS 101"));    // 2
+
+//------------------------------------------------------------------------------
+
 // let str = "AnIsHaaa";
 // let upperCount = 0;
 

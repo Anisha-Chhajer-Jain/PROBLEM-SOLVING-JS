@@ -1,3 +1,18 @@
+// Q45. Count Digits in a String
+function countDigits(str) {
+  let count = 0;
+  for (let ch of str) {
+    if (ch >= '0' && ch <= '9') count++;
+  }
+  return count;
+}
+
+console.log(countDigits("abc123"));   // 3
+console.log(countDigits("2025 year"));// 4
+console.log(countDigits("no digits"));// 0
+
+//--------------------------------------------------------------------
+
 let str="CodingGIta123634";
 
 let str2="1234567890";

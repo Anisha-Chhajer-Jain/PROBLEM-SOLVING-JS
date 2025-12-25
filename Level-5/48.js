@@ -1,4 +1,15 @@
 
+// Q48. Remove All Vowels
+function removeVowels(str) {
+  return str.replace(/[aeiou]/gi, "");
+}
+
+console.log(removeVowels("hello"));      // hll
+console.log(removeVowels("JavaScript")); // JvScrpt
+console.log(removeVowels("AEIOU"));       // ""
+
+//----------------------------------------------------------------------------
+
 let str = "Prashant";
 let vowel = "";
 
