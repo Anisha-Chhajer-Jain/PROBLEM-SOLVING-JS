@@ -1,3 +1,15 @@
+
+// Q43. Check if String Contains a Character (case-sensitive)
+function containsChar(str, ch) {
+  return str.includes(ch);
+}
+
+console.log(containsChar("hello", "e")); // true
+console.log(containsChar("hello", "a")); // false
+console.log(containsChar("JavaScript", "S")); // false
+
+//---------------------------------------------------------------------
+
 var sen = "i ate an apple today"
 
 sen = sen.toLowerCase()

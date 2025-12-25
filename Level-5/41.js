@@ -1,3 +1,13 @@
+// Q41. Count Words in a Sentence
+function countWords(str) {
+  return str.trim().split(/\s+/).length;
+}
+
+console.log(countWords("Hello world"));            // 2
+console.log(countWords("JavaScript is fun"));      // 3
+console.log(countWords("  this   is   spaced  ")); // 3
+
+//--------------------------------------------------
 
 var sen = "i ate an apple today"
 

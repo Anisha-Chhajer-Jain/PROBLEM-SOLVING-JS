@@ -1,3 +1,15 @@
+
+// Q44. Compare Two Strings (Exact Match)
+function compareStrings(a, b) {
+  return a === b;
+}
+
+console.log(compareStrings("hello", "hello")); // true
+console.log(compareStrings("Hello", "hello")); // false
+console.log(compareStrings("js", "js "));       // false
+
+//--------------------------------------------------------------
+
 let str1="123";
 let str2="123";
 
