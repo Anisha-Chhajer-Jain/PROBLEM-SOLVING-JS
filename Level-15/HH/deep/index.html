@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTTplay - Search Movies, Shows, Cast, Crew & Stories</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-play-circle"></i>
+                OTT<span>play</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">LiveTV <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#">Sports <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#">Hot & New</a></li>
+                <li><a href="#">News <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Web Stories</a></li>
+                <li><a href="#">More <i class="fas fa-chevron-down"></i></a></li>
+            </ul>
+
+            <div class="auth-buttons">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-container">
+        <h1 class="search-title">Search Movies, Shows, Cast, Crew & Stories...</h1>
+
+        <div class="search-box">
+            <input type="text" class="search-input" id="searchInput"
+                placeholder="Start typing to search for movies, TV shows, actors, directors...">
+            <button class="search-button" id="searchButton">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="search-filters">
+            <button class="filter-btn active" data-type="movie">Movies</button>
+            <button class="filter-btn" data-type="tv">TV Shows</button>
+            <button class="filter-btn" data-type="person">People</button>
+            <button class="filter-btn" data-type="multi">All</button>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="container results-container">
+        <h2 class="results-title">Search Results <span class="results-count" id="resultsCount"></span></h2>
+
+        <!-- Loading Indicator -->
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+            <p>Searching for movies and shows...</p>
+        </div>
+
+        <!-- Results Grid -->
+        <div class="results-grid" id="resultsGrid">
+            <!-- Movie/show cards will be dynamically inserted here -->
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResults" style="display: none;">
+            <i class="fas fa-film"></i>
+            <h3>No results found</h3>
+            <p>Try a different search term or filter</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">OTTplay</div>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <div class="copyright">
+                &copy; 2025 OTTplay. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
