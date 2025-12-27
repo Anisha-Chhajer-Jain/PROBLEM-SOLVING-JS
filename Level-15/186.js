@@ -9,4 +9,4 @@ function bubbleSort(arr) {
     }
     return arr;
 }
-console.log(bubbleSort([-1,1,0,-5]));
+console.log(bubbleSort([3,7,4,5,8,9]));
