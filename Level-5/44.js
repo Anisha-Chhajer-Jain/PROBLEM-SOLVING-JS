@@ -2,6 +2,7 @@
 // Input: "Hello", "hello" → Output: false
 function compare(str1,str2){
     if(str1==str2){
+    // if(str1.includes(str2)){
         console.log(true);
     }
     else{
@@ -11,7 +12,6 @@ function compare(str1,str2){
 compare("hello","helLo");
 
 //console.log(str1 === str2 ? "Both are equal" :"Both are not equal ");
-
 //--------------------------------------------------------------------------------------------
 
 // Q44. Compare Two Strings (Exact Match)

@@ -1,3 +1,35 @@
+function count(str){
+    let ch;
+    let c=1;
+    for(let i=0;i<str.length-1;i++){
+        ch=str.charCodeAt(i);
+        if(ch>=65 && ch<=90)
+        c++;
+    }
+    console.log(c);
+}
+count("ANISHA");
+
+
+function count(str){
+    let c=0;
+    for(let i=0;i<str.length-1;i++){
+        if(str[i]>='A' && str[i]<='Z')
+        c++;
+    }
+    console.log(c);
+}
+count("ANISHA");
+
+
+
+
+
+
+
+
+
+
 
 // Q46. Count Uppercase Letters
 function countUppercase(str) {
