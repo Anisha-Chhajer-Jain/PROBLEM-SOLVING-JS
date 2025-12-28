@@ -1,20 +1,30 @@
 // Q43. Check if String Contains a Character
 // Input: str = "hello", ch = "a" → Output: false
-function contain(str,ch){
-    if(str.includes(ch)){
+function contain(str, ch) {
+    if (str.includes(ch)) {
         console.log(true);
     }
-    else{
+    else {
         console.log(false);
     }
 }
-contain("anisha",'w');
-
+contain("anisha", 'w');
+//---------------------------------------------------------
+function contain(str, ch) {
+    for (let i = 0; i < str.length - 1; i++) {
+        if (str[i] == ch) {
+            console.log(true);
+            break;
+        }
+    }
+    console.log(false);
+}
+contain("anisha", 'w');
 //---------------------------------------------------------------------------------------
 
 // Q43. Check if String Contains a Character (case-sensitive)
 function containsChar(str, ch) {
-  return str.includes(ch);
+    return str.includes(ch);
 }
 
 console.log(containsChar("hello", "e")); // true
