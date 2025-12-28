@@ -13,6 +13,16 @@ if (n === 0) {
   }
   console.log(count);
 }
+//gooddd way
+function countDigits(num) {
+  return Math.abs(num).toString().length;
+}
+console.log(countDigits(12345));   
 
-// Method 2: String length
-console.log(Math.abs(n).toString().length);
+//with negative
+
+let num = -9876;
+num = Math.abs(num);
+
+let count = num.toString().length;
+console.log(count); // Output: 4
