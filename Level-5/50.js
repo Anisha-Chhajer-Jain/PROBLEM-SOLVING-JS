@@ -3,8 +3,10 @@
 function toggleCase1(str) {
   let res = "";
   for (let ch of str) {
-    if (ch >= 'a' && ch <= 'z') res += ch.toUpperCase();
-    else if (ch >= 'A' && ch <= 'Z') res += ch.toLowerCase();
+    if (ch >= 'a' && ch <= 'z')
+      res += ch.toUpperCase();
+    else if (ch >= 'A' && ch <= 'Z')
+      res += ch.toLowerCase();
     else res += ch;
   }
   return res;
@@ -29,8 +31,10 @@ function toggleCase3(str) {
   let res = "";
   for (let ch of str) {
     let code = ch.charCodeAt(0);
-    if (code >= 65 && code <= 90) res += String.fromCharCode(code + 32);
-    else if (code >= 97 && code <= 122) res += String.fromCharCode(code - 32);
+    if (code >= 65 && code <= 90) 
+      res += String.fromCharCode(code + 32);
+    else if (code >= 97 && code <= 122) 
+      res += String.fromCharCode(code - 32);
     else res += ch;
   }
   return res;
@@ -41,16 +45,16 @@ console.log(toggleCase3("Js 101")); // jS 101
 let str = "Anishaaa";
 let toggle = "";
 for (let i = 0; i < str.length; i++) {
-    let ch=str[i];
+  let ch = str[i];
 
-    if(ch>='a' && ch<='z'){
-        toggle += ch.toUpperCase();
-    }
-    else if(ch>='A' && ch<='Z') {
-        toggle += ch.toLowerCase();
-    }
-    else{
-        toggle += ch;
-    }
+  if (ch >= 'a' && ch <= 'z') {
+    toggle += ch.toUpperCase();
+  }
+  else if (ch >= 'A' && ch <= 'Z') {
+    toggle += ch.toLowerCase();
+  }
+  else {
+    toggle += ch;
+  }
 }
 console.log(toggle);  

@@ -17,7 +17,7 @@ if (n === 0) {
 function countDigits(num) {
   return Math.abs(num).toString().length;
 }
-console.log(countDigits(12345));   
+console.log(countDigits(12345));
 
 //with negative
 

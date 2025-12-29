@@ -36,6 +36,8 @@
 // maximum(16,200,36);
 
 
+
+
 // function positiveNegative(num){
 //     if(num>0){
 //         console.log("Positive no.");
@@ -50,18 +52,18 @@
 // positiveNegative(-5);
 
 
-function mautKaKhel(age){
-    if(age>=0 && age<=12){
-        console.log("Child");
-    }
-    else if(age>=13 && age<=19){
-        console.log("Teenager");
-    }
-    else{
-        console.log("Adult");
-    }
-}
-mautKaKhel(18);
+// function mautKaKhel(age){
+//     if(age>=0 && age<=12){
+//         console.log("Child");
+//     }
+//     else if(age>=13 && age<=19){
+//         console.log("Teenager");
+//     }
+//     else{
+//         console.log("Adult");
+//     }
+// }
+// mautKaKhel(18);
 
 
 
