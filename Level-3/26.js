@@ -13,6 +13,21 @@ for (let i = 2; i < n; i++) {
 
 console.log(isPrime);
 
+//------------------------------------------------------------
+
+function prime(num){
+    let c=0;
+    for(let i=1;i<=num;i++){
+        if(num%i==0)
+        c++;
+    }
+    if(c>3)
+    console.log("not prime");
+    else
+    console.log("prime");
+}
+prime(20);
+
 // Method 2: Optimized (√n)
 // let isPrime = n > 1;
 
