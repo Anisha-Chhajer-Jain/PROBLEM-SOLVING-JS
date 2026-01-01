@@ -19,15 +19,6 @@ function secondLargest(arr) {
 console.log(secondLargest([10, 5, 8, 20])); // 10
 
 
-// // Q61. Double Each Element
-// // Input: [5, -2] → Output: [10, -4]
-// function double(num){
-//     for(let i=0;i<num.length;i++)
-//     {
-//         console.log(num[i]*2);
-//     }
-// }
-// double([5,6,7,-8])
 
 // // Q62. Square Each Element
 // // Input: [-2, 4] → Output: [4, 16]
