@@ -19,16 +19,6 @@ function secondLargest(arr) {
 console.log(secondLargest([10, 5, 8, 20])); // 10
 
 
-// // Q63. Reverse Array into New Array
-// // Input: ["a", "b", "c"] → Output: ["c", "b", "a"]
-// function double(num){
-//     for(let i=num.length;i>0;i--)
-//     {
-//         console.log(num[i]);
-//     }
-// }
-// double([5,6,7,-8])
-
 
 // // Q64. Copy Array
 // // Input: ["x", "y"] → Output: ["x", "y"]
