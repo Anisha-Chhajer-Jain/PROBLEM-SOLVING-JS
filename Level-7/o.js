@@ -23,48 +23,6 @@ console.log(secondLargest([10, 5, 8, 20])); // 10
 
 
 
-// // Q66. Find Index of a Value
-// // Given an array and a value, return index or -1.
-// // Input: [10, 20, 30], value = 40 → Output: -1
-// function double(num,n){
-//     for(let i=0;i<num.length;i++)
-//     {
-//         if(num[i]==n)
-//         {
-//         console.log("1");
-//         }
-//         else{
-//             console.log("-1");
-//         }
-//     }
-// }
-// double([10,20,30],40);
-
-// // Q67. Frequency of a Value
-// // Input: [5, 5, 5], value = 5 → Output: 3
-// function double(num,n){
-//     let c=0;
-//     for(let i=0;i<num.length;i++)
-//     {
-//         if(num[i]==n){
-//             c++;
-//         }
-//     }
-//     console.log(c);
-// }
-// double([5,6,7,5,5],5)
-
-// Q68. Check if Array is Sorted (Increasing)
-// Input: [1, 2, 2, 3] → Output: true
-function isSorted(arr) {
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] < arr[i - 1]) 
-    console.log(false);
-  }
-  console.log(true);
-}
-isSorted([1, 2, 3, 4]); 
-
 // Q69. Second Largest Element
 // Input: [10, 5, 8, 20] → Largest = 20 → Second largest = 10
 
