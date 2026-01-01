@@ -22,16 +22,6 @@ console.log(secondLargest([10, 5, 8, 20])); // 10
 
 
 
-// // Q65. Check if Array Contains a Value
-// // Input: arr = [1, 2, 3], value = 5 → Output: false
-// function double(num,n){
-//     for(let i=0;i<num.length;i++)
-//     {
-//         if(num[i]==n)
-//         console.log("True");
-//     }
-// }
-// double([5,6,7,-8],5)
 
 // // Q66. Find Index of a Value
 // // Given an array and a value, return index or -1.
