@@ -10,9 +10,8 @@ function countOccurrences(arr, target) {
 console.log(countOccurrences([1,2,2,2,3], 2)); 
 
 
-
-//Binary search 
-function countOccurrences(arr, target) {
+//-------------------------------------------Binary search------------------------------
+function count(arr,target) {
   function findFirst() {
     let low = 0, high = arr.length - 1;
     let first = -1;
@@ -31,7 +30,6 @@ function countOccurrences(arr, target) {
     }
     return first;
   }
-
   function findLast() {
     let low = 0, high = arr.length - 1;
     let last = -1;
@@ -41,7 +39,7 @@ function countOccurrences(arr, target) {
 
       if (arr[mid] === target) {
         last = mid;
-        low = mid + 1; // move right
+        low = mid + 1; 
       } else if (arr[mid] < target) {
         low = mid + 1;
       } else {
@@ -59,4 +57,4 @@ function countOccurrences(arr, target) {
   return lastIndex - firstIndex + 1;
 }
 
-console.log(countOccurrences([1, 2, 2, 2, 3], 2)); 
+console.log(count([1,2,2,2,3],2)); 

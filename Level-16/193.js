@@ -10,5 +10,5 @@ function hasPairSum(arr, target) {
     }
     return false;
 }
-console.log(hasPairSum([1,2,3,4], 5)); // true
+console.log(hasPairSum([1,2,3,4], 5)); 
 

@@ -1,12 +1,12 @@
 ////71.Remove Even Numbers (Keep Only Odd)
 //----------------with given and an empty array-----push
-let arr71 = [1,2,3,4,5];
+let arr71 = [1, 2, 3, 4, 5];
 let result = [];
 for (let i = 0; i < arr71.length; i++) {
     if (arr71[i] % 2 == 0) {
         continue;
     }
-    else{
+    else {
         result.push(arr71[i]);
     }
 }
@@ -14,17 +14,17 @@ console.log(result);
 //---------------------------------------------with the given array------------------------------splice
 for (let i = arr71.length - 1; i >= 0; i--) {
     if (arr71[i] % 2 === 0) {
-        arr71.splice(i, 1); 
+        arr71.splice(i, 1);
     }
 }
-console.log(arr71); 
+console.log(arr71);
 //-------------------------------------------------- OR ---------------------------------------------------
-let res71=arr71.filter((value, index, array)=>{
+let res71 = arr71.filter((value, index, array) => {
     // console.log(value);
     // console.log(index);
     // console.log(array);
     // return 0;
-    return value%2!=0
+    return value % 2 != 0
 })
 console.log(res71);
 
@@ -48,44 +48,44 @@ console.log(dupli);
 let dupli1 = [];
 let obj = {};
 for (let i = 0; i < arr.length; i++) {
-    if (!obj[arr[i]]) {       
-        obj[arr[i]] = true;   
-        dupli.push(arr[i]);   
+    if (!obj[arr[i]]) {
+        obj[arr[i]] = true;
+        dupli.push(arr[i]);
     }
 }
 console.log(dupli);
 //--------------------------------------------------------------------------------------------------
-let res=[];
-let obj1={};
-for(let i=0;i<arr.length; i++){
-if(obj1[arr[i]]){
-obj1[arr[i]]++
+let res = [];
+let obj1 = {};
+for (let i = 0; i < arr.length; i++) {
+    if (obj1[arr[i]]) {
+        obj1[arr[i]]++
+    }
+    else {
+        obj1[arr[i]] = 1;
+    }
 }
-else{
-obj1[arr[i]]=1;
-}
-}
-for(let char in obj1){
-res.push(Number (char));
+for (let char in obj1) {
+    res.push(Number(char));
 }
 console.log(res)
 //----------------------------------------------- OR ---------------------------------------------------------
-let res1=[];
-for(let i=0;i<arr.length; i++ ){
-let notpresent=true;
-for(let j=0;j<res1. length; j++){
-if(arr[i] == res[j]){
-notpresent=false;
-break;
-}
-}
-if(notpresent == true){
-res1.push(arr[i]);
-}
+let res1 = [];
+for (let i = 0; i < arr.length; i++) {
+    let notpresent = true;
+    for (let j = 0; j < res1.length; j++) {
+        if (arr[i] == res[j]) {
+            notpresent = false;
+            break;
+        }
+    }
+    if (notpresent == true) {
+        res1.push(arr[i]);
+    }
 }
 console.log(res1)
 //----------------------------set is the data structure that stores unique code-----------------------------
-let res2=new Set(arr);
+let res2 = new Set(arr);
 console.log(res2);
 console.log([...res2]);
 let dupli2 = [];
@@ -146,23 +146,23 @@ for (let i = 0; i < arr1.length; i++) {
 }
 console.log(intersect);
 //------------------alt sir way------------------------------- OR -------------------------------------------
-let arr01=[1,2,3,4];
-let arr0=[1,2,2,3];
-let res7=[];
-let i=0;
-let j=0;
-while(i<arr.length && j<arr2.length){
-if(arr01[i] == arr2[j]){
-res7.push(arr01[i]);
-  i++;
-  j++;
-}
-else if(arr01[i]>arr01[j]){
-    j++;
- }
-else{
-    i++;
- }
+let arr01 = [1, 2, 3, 4];
+let arr0 = [1, 2, 2, 3];
+let res7 = [];
+let i = 0;
+let j = 0;
+while (i < arr.length && j < arr2.length) {
+    if (arr01[i] == arr2[j]) {
+        res7.push(arr01[i]);
+        i++;
+        j++;
+    }
+    else if (arr01[i] > arr01[j]) {
+        j++;
+    }
+    else {
+        i++;
+    }
 }
 console.log(res7);
 //--------filter and include together//------------------- OR -----------------------------------------------
@@ -173,11 +173,10 @@ console.log(intersection);
 
 
 // //75. Rotate Array Right by 1
-
 let arr5 = [1, 2, 3, 4];
 let rotate0 = [];
 if (arr5.length > 0) {
-    rotate0.push(arr5[arr5.length - 1]);       
+    rotate0.push(arr5[arr5.length - 1]);
 
     for (let i = 0; i < arr5.length - 1; i++) {
         rotate0.push(arr5[i]);
@@ -185,19 +184,19 @@ if (arr5.length > 0) {
 }
 console.log(rotate0);
 //----------------------------------------------- OR ---------------------------------------------------------
-let rotate1 = [55,84,93,49,89,87];
+let rotate1 = [55, 84, 93, 49, 89, 87];
 let res3 = [];
- res3 = [rotate1[rotate1.length-1]];
-for(let i =0;i<rotate1.length-1;i++){
+res3 = [rotate1[rotate1.length - 1]];
+for (let i = 0; i < rotate1.length - 1; i++) {
     res.push(rotate1[i]);
 }
 console.log(res3);
 //----------------------------------------------- OR ---------------------------------------------------------
-let temp2=rotate2[rotate.length-1];
-for(let i=rotate2.length-1;i>0;i--){
-rotate2[i]=rotate2[i-1];
+let temp2 = rotate2[rotate.length - 1];
+for (let i = rotate2.length - 1; i > 0; i--) {
+    rotate2[i] = rotate2[i - 1];
 }
-rotate2[0]=temp2;
+rotate2[0] = temp2;
 console.log(rotate2)
 
 
@@ -213,10 +212,10 @@ if (arr6.length > 0) {
 }
 console.log(rotated);
 //-------------------------------------------- OR -------------------------------------------------------
-let rotate = [55,84,93,49,89,87];
+let rotate = [55, 84, 93, 49, 89, 87];
 let res4 = [];
 let temp = rotate[0];
-for(let i =1;i<rotate.length-1;i++){
+for (let i = 1; i < rotate.length - 1; i++) {
     res4.push(rotate[i]);
 }
 res4.push(temp);
@@ -239,13 +238,13 @@ for (let i = 0; i < arr7.length; i++) {
 }
 console.log(countt);
 //------------------------------------------------- OR ----------------------------------------------------
-let countavg = [84,28,92,26,18];
-let avg = countavg.reduce((x,y)=>(x+y));
-avg = avg/countavg.length;
+let countavg = [84, 28, 92, 26, 18];
+let avg = countavg.reduce((x, y) => (x + y));
+avg = avg / countavg.length;
 console.log(avg);
 let count = 0;
-for(let i=0;i<countavg.length;i++){
-    if(countavg[i]>avg){
+for (let i = 0; i < countavg.length; i++) {
+    if (countavg[i] > avg) {
         count++;
     }
 }
@@ -279,7 +278,7 @@ let zeros = 0;
 let ones = 0;
 for (let i = 0; i < arr.length; i++) {
     if (arr9[i] === 0) {
-    zeros++;
+        zeros++;
     }
     else if (arr9[i] === 1) {
         ones++;
@@ -294,9 +293,9 @@ let arr80 = [1, 2, 3, 4, 5];
 let evens = [];
 let odds = [];
 for (let i = 0; i < arr80.length; i++) {
-    if (arr80[i] % 2 === 0){
+    if (arr80[i] % 2 === 0) {
         evens.push(arr80[i]);
-    } 
+    }
     else {
         odds.push(arr80[i]);
     }
@@ -304,13 +303,50 @@ for (let i = 0; i < arr80.length; i++) {
 console.log("evens =", evens);
 console.log("odds =", odds);
 //---------------------------------------------- OR ---------------------------------------------------
-let arr10=[12,8,9,7,3,4];
+let arr10 = [12, 8, 9, 7, 3, 4];
 
-let even=arr10.filter((value)=>{
-return value%2 == 0;
+let even = arr10.filter((value) => {
+    return value % 2 == 0;
 })
-let odd=arr10.filter((value)=>{
-return value%2 != 0;
+let odd = arr10.filter((value) => {
+    return value % 2 != 0;
 })
 console.log(even);
 console.log(odd);
+
+
+
+
+
+
+
+
+// Q71. Remove Even Numbers (Keep Only Odd)
+// Input: [1, 3, 5] → Output: [1, 3, 5]
+
+// Q72. Remove Duplicates
+// Input: ["a", "a", "b"] → Output: ["a", "b"]
+
+// Q73. Concatenate Two Arrays
+// Input: ["a"] and ["b", "c"] → Output: ["a", "b", "c"]
+
+// Q74. Intersection of Two Arrays (Common Elements)
+// Input: [1, 1, 2] and [1, 2, 2] → Output: [1, 2]
+
+// Q75. Rotate Array Right by 1
+// Input: [1, 2, 3, 4] → Output: [4, 1, 2, 3]
+
+// Q76. Rotate Array Left by 1
+// Input: [1, 2, 3, 4] → Output: [2, 3, 4, 1]
+
+// Q77. Count Elements Greater than Average
+// Input: [5, 15] → Avg = 10 → Elements greater: 15 → Output: 1
+
+// Q78. Largest Positive and Smallest Negative
+// Input: [-3, -1] → Largest positive = null, Smallest negative = -3
+
+// Q79. Count 0s and 1s in Binary Array
+// Input: [0, 0] → Output: zeros = 2, ones = 0
+
+// Q80. Separate Even and Odd into Two Arrays
+// Input: [1, 2, 3, 4, 5] → Output: evens = [2, 4], odds = [1, 3, 5]
