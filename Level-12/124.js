@@ -8,3 +8,11 @@ function printDown(n) {
     console.log(result);
 }
 printDown(10)
+
+// Q124. Print from n Down to 1
+// Input: n = 3 → Output: 3 2 1
+function multi(num){
+    for(let i=0;i<num;i++)
+    console.log(i)
+}
+multi(8)
