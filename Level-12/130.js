@@ -25,3 +25,16 @@ function CoPrime(n1, n2) {
     console.log(GCD == 1)
 }
 CoPrime(12, 18);
+
+
+
+// Q130. Co-prime Numbers
+// Input: a = 7, b = 9 → GCD = 1 → Output: true
+function gcd(a, b) {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}

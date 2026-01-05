@@ -9,3 +9,18 @@ function countDiv2and5(n) {
     }
     return count;
 }
+
+
+
+// Q128. Count Numbers Divisible by Both 2 and 5 (1 to n)
+// Input: n = 10 → Numbers: 10 → Output: 1
+function multi(num){
+    let s=0;
+    for(let i=1;i<=num;i++){
+        if(i%2==0 && i%5==0)
+        s++;
+    }
+    console.log(s);
+}
+multi(10)
+

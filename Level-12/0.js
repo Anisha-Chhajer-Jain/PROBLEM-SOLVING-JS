@@ -1,38 +1,4 @@
 
-// // Q128. Count Numbers Divisible by Both 2 and 5 (1 to n)
-// // Input: n = 10 → Numbers: 10 → Output: 1
-// function multi(num){
-//     let s=0;
-//     for(let i=1;i<=num;i++){
-//         if(i%2==0 && i%5==0)
-//         s++;
-//     }
-//     console.log(s);
-// }
-// multi(10)
-
-// // Q129. Perfect Number
-// // Input: n = 10 Divisors: 1,2,5 → Sum = 8 → Output: false
-// function multi(num){
-//     let s=0;
-//     for(let i=1;i<=num/2;i++){
-//         if(num%i===0)
-//         s=s+i;
-//     }
-//     console.log(s);
-// }
-// multi(10)
-
-// // Q130. Co-prime Numbers
-// // Input: a = 7, b = 9 → GCD = 1 → Output: true
-// function gcd(a, b) {
-//   while (b !== 0) {
-//     let temp = b;
-//     b = a % b;
-//     a = temp;
-//   }
-//   return a;
-// }
 
 // function isCoprime(a, b) {
 //   return gcd(a, b) === 1;
