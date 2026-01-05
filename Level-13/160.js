@@ -54,3 +54,22 @@ console.log(true);
 pangram("The quick brown fox jumps over a lazy dog")
 
 
+
+
+
+function isPangram(sentence) {
+  sentence = sentence.toLowerCase();
+  let letters = new Set();
+
+  for (let char of sentence) {
+    if (char >= 'a' && char <= 'z') {
+      letters.add(char);
+    }
+  }
+
+  return letters.size === 26;
+}
+
+// Example usage
+console.log(isPangram("The quick brown fox jumps over the lazy dog")); // true
+console.log(isPangram("Hello world")); // false
