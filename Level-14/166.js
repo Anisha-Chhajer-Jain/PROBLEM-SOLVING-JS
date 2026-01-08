@@ -6,3 +6,4 @@ function allPositive(arr) {
     console.log(true);
 }
 allPositive([2,-3,3,4])
+

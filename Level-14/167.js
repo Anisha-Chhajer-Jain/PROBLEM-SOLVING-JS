@@ -9,3 +9,4 @@ function countGreater(arr, k) {
     console.log(count);
 }
 countGreater([1, 5, 7, 2]);
+

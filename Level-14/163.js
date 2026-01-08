@@ -22,3 +22,5 @@ function absoluteArray(arr) {
     console.log(res);
 }
 absoluteArray([-3]);
+
+

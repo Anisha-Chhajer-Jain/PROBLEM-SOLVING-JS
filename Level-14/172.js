@@ -21,3 +21,4 @@ function isStrictlyIncreasing(arr) {
     console.log(true);
 }
 isStrictlyIncreasing([1,2,3,5,4])
+

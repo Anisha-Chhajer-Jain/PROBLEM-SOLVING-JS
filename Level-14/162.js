@@ -19,3 +19,5 @@ function tripleArray(arr) {
 console.log(res);
 }
 tripleArray([1,3,4])
+
+

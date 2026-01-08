@@ -19,3 +19,4 @@ function atleastOneEven(arr) {
 }
 console.log("Contains all odd elements");
 valueCount([6, 2, 8, 10]);
+
